@@ -32,10 +32,10 @@ body{
 }
 
 .link a{
-    color: #fff;
+    color: antiquewhite;
     opacity: 0.5;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     padding: 10px 30px;
     margin: 0 20px;
     line-height: 80px;
@@ -62,7 +62,8 @@ body{
 }
 
 .hero-heading{
-    color: #fff;
+    /* color: #fff; */
+    color: antiquewhite;
     font-size: 120px;
     text-transform: capitalize;
     font-weight: 300;
@@ -75,7 +76,7 @@ body{
     height: -90vh;
     width: 45%;
     object-fit: cover;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 .home-section.active,
@@ -101,7 +102,8 @@ body{
 
 .project-heading{
     font-size: 100px;
-    background: #868585;
+    /* background: #868585; */
+    background: rgb(116, 91, 60);
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 50px;
@@ -135,9 +137,12 @@ body{
 .project-content{
     position: relative;
     padding: 40px;
-    color: #fff;
+    /* color: #fff; */
+    /* color: antiquewhite; */
+    color: #daccad;
     transition: .5s;
     opacity: 0;
+    word-spacing: 1px;
 }
 
 .project-title{
@@ -149,9 +154,10 @@ body{
 
 .project-info{
     margin: 40px;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 30px;
     text-align: center;
+
 }
 
 .project-btn-grp{
@@ -166,13 +172,13 @@ body{
     font-size: 18px;
     border: none;
     background: #000;
-    color: #fff;
+    color: #daccad;
     cursor: pointer;
 }
 
 .project-btn.live{
     background: none;
-    border: 2px solid #fff;
+    border: 2px solid #daccad;
 }
 
 .project-card:hover .project-img{
@@ -208,7 +214,8 @@ body{
 }
 
 .about-info{
-    color: #fff;
+    /* color: #fff; */
+    color: antiquewhite;
     opacity: 0.6;
     font-size: 20px;
     line-height: 40px;
@@ -230,11 +237,11 @@ body{
     color: #fff;
     border: none;
     font-size: 16px;
-    text-transform: capitalize;
     cursor: pointer;
     transition: .5s;
     background: rgba(0, 0, 0, 0.5);
 }
+
 
 .download-cv-btn:hover{
     background: #000;
@@ -250,10 +257,11 @@ body{
 .heading{
     text-align: center;
     font-size: 60px;
-    color: #fff;
+    /* color: #fff; */
+    color: antiquewhite;
     text-transform: capitalize;
     font-weight: 300;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .skills-container{
@@ -262,7 +270,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 100px;
-    color: #fff;
+    color: antiquewhite
 }
 
 .skill-card{
@@ -289,7 +297,7 @@ body{
     font-size: 18px;
     line-height: 30px;
 }
-
+/* 
 .skill-level{
     position: absolute;
     top: 80px;
@@ -302,7 +310,7 @@ body{
     font-size: 22px;
     border-radius: 50%;
     border: 10px solid;
-}
+} */
 
 .skill-card:nth-child(1) .skill-level{
     background: #ff4f4f28;
@@ -411,16 +419,19 @@ body{
 }
 
 .card:nth-child(2), .card:nth-child(2):before{
-    background: #ff4f4f;
+    /* background: #ff4f4f; */
+    background: linear-gradient(to right, #6d6027, #daccad); 
 }
 .card:nth-child(3), .card:nth-child(3):before{
-    background: #ffb84f;
+    background: linear-gradient(to right, #6d6027, #daccad);
 }
 .card:nth-child(4), .card:nth-child(4):before{
-    background: #3dca5c;
+
+    background: linear-gradient(to right, #6d6027, #daccad);
 }
 .card:nth-child(5), .card:nth-child(5):before{
-    background: #565252;
+
+    background: linear-gradient(to right, #6d6027, #daccad); 
 }
 .card:nth-child(6), .card:nth-child(6):before{
     background: #4fa0ff;
@@ -461,7 +472,7 @@ body{
     width: 100%;
     height: 40px;
     background: rgba(255, 255, 255, 0.2);
-    border: 1px solid #fff;
+    border: 1px solid antiquewhite;
     margin-bottom: 30px;
     border-radius: 5px;
     text-transform: capitalize;
@@ -480,15 +491,16 @@ body{
 }
 
 .form-submit-btn{
-    background: #ff4f4f;
-    color: #fff;
-    text-transform: capitalize;
+    background: antiquewhite;
+    color: #6d6027;
+    /* text-transform: capitalize; */
     padding: 15px 40px;
     display: block;
     margin: auto;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    font-size: 20px;
 }
 
 .map{

@@ -11,34 +11,59 @@
     <!-- navbar -->
 <nav class="navbar">
     <ul class="link-group">
-        <li class="link active"><a href="#">home</a></li>
-        <li class="link"><a href="#">projects</a></li>
-        <li class="link"><a href="#">about</a></li>
-        <!-- <div class="link"><a href="#">skills</a></div> -->
-        <li class="link"><a href="#">contact</a></li>
+        <li class="link active"><a href="#homesec">Home</a></li>
+        <li class="link"><a href="#aboutsec">About</a></li>
+        <li class="link"><a href="#projsec">Projects</a></li>
+        <div class="link"><a href="#skillsec">Skills</a></div>
+        <div class="link"><a href="#edusec">Education and Experience</a></div>
+        <li class="link"><a href="#consec">Contact</a></li>
     </ul>
 </nav>
 
 <!-- home section -->
 
-<section class="home-section active">
+<section id="homesec" class="home-section active">
     <h1 class="hero-heading">hello, i am <br> hemant</h1>
     <img src="images/MicrosoftTeams-image (8).png" class="home-img" alt="">
 </section>
 
 
+<!-- about section --> 
+<section id="aboutsec" class="about-section active">
+    <div class="about">
+        <div class="about-img-container">
+            <h1 style="color: antiquewhite; text-align: center;">About Me</h1>
+            <img src="images/MicrosoftTeams-image (9).png" class="about-img" alt="">
+            <button class="download-cv-btn">  <a href="Hemant-resume.docx.pdf" download>Download CV</button></a>
+        </div> 
+        <p class="about-info">VOLUNTEER ACTIVITY
+            Education Volunteer – eVidyaloka NGO Jun 2021–Nov 2021 <br>
+            ● Led teaching sessions on Chemistry and Maths for rural regional students with batch size 25 - 30 twice a week
+            Library Technician – Mumbai University Jan 2018 – June 2018
+            Event Volunteer – World Robot Olympiad, India Aug 2017 <br>
+            ● Participated in managing the Mumbai regional championship competition.</p>
+    </div>
+</section>
+
+
 <!-- project section -->
-<section class="project-section">
+<section id="projsec" class="project-section active">
     <h1 class="project-heading">some of my projects</h1>
     <div class="project-container">
         <div class="project-card">
-            <img src="images/project1.png" class="project-img" alt="">
+            <img src="images/projectbg.png" class="project-img" alt="image not found">
             <div class="project-content">
-                <h1 class="project-title">project 01</h1>
+                <h1 class="project-title">Self-Balancing Robot</h1>
                 <p class="project-info">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+                   <ul>
+                    <li>Customized self-balancing robot using an Arduino Uno board programmed in embedded C with a voltage regulator IC</li>
+                    <br>
+                    <li>The bot effectively works on non-uniform surfaces due to its balanced control system which manages the bot to remain at
+                        90⁰ w.r.t ground and controls were given from an Android App installed on the phone to move the bot forward and backward.
+                        </li>
+                   </ul>
                 </p>
+                <br>
                 <div class="project-btn-grp">
                     <button class="project-btn github">github repo</button>
                     <button class="project-btn live">see live</button>
@@ -46,24 +71,11 @@
             </div>
         </div>
         <div class="project-card">
-            <img src="images/proj2.png" class="project-img" alt="">
+            <img src="images/projectbg2.png" class="project-img" alt="">
             <div class="project-content">
-                <h1 class="project-title">project 01</h1>
+                <h1 class="project-title">Sample project</h1>
                 <p class="project-info">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
-                </p>
-                <div class="project-btn-grp">
-                    <button class="project-btn github">github repo</button>
-                    <button class="project-btn live">see live</button>
-                </div>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="images/proj3.png" class="project-img" alt="403">
-            <div class="project-content">
-                <h1 class="project-title">project 01</h1>
-                <p class="project-info">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit vitae delectus cumque repudiandae aliquam optio accusamus natus nobis! Nam, sunt?
+                   can add more!
                 </p>
                 <div class="project-btn-grp">
                     <button class="project-btn github">github repo</button>
@@ -73,59 +85,89 @@
         </div>
     </div>
 </section>
-
-<!-- about section -->
-<section class="about-section active">
-    <div class="about">
-        <div class="about-img-container">
-            <img src="images/MicrosoftTeams-image (9).png" class="about-img" alt="">
-            <button class="download-cv-btn">downlaod cv</button>
-        </div>
-        <p class="about-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ex non, velit natus maiores eius ad quod in, ducimus quidem atque reprehenderit inventore iure beatae quos quam ipsum! Magnam cumque recusandae velit, quaerat laudantium consequuntur sunt quas? Autem eveniet et non, rerum porro esse, eos natus dolore dolorem nihil veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor natus nisi nemo ab quod sit voluptatem odit tenetur aperiam reprehenderit architecto, tempore alias nam vel temporibus quibusdam assumenda doloremque voluptate.</p>
-    </div>
-</section>
+<br>
+<br>
 
 
 <!-- skills -->
-<div class="skill-section active">
-    <h1 class="heading">skills</h1>
+<div  class="skill-section active">
+    <h1 id="skillsec" class="heading">skills</h1>
     <div class="skills-container">
         <div class="skill-card">
-            <img src="img/html.png" class="skill-img" alt="">
-            <div class="skill-level">98%</div>
-            <h1 class="skill-name">HTML</h1>
-            <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+            <img src="images/coding.png" class="skill-img" alt="">
+            <!-- <div class="skill-level">98%</div> -->
+            <h1 class="skill-name">CODING</h1>
+            <p class="skill-info"> C <br> Python3 <br> C++ <br> shell scripting</p>
         </div>
         <div class="skill-card">
-            <img src="img/html.png" class="skill-img" alt="">
-            <div class="skill-level">98%</div>
-            <h1 class="skill-name">HTML</h1>
-            <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+            <img src="images/os.png" class="skill-img" alt="">
+            <!-- <div class="skill-level">98%</div> -->
+            <h1 class="skill-name">OPERATING SYSTEM</h1>
+            <p class="skill-info"><br> Linux(Ubuntu, Fedora) <br> MacOS <br> Windows 7, 10</p>
         </div>
         <div class="skill-card">
-            <img src="img/html.png" class="skill-img" alt="">
-            <div class="skill-level">98%</div>
-            <h1 class="skill-name">HTML</h1>
-            <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+            <img src="images/debugtool.png" class="skill-img" alt="">
+            <!-- <div class="skill-level">98%</div> -->
+            <h1 class="skill-name">DEBUGGING TOOLS</h1>
+            <p class="skill-info">GDB debugger <br> Strace <br> Valgrind <br> Objdump <br> READELF
+            </p>
         </div>
-        // +4 more cards
+        <div class="skill-card">
+            <img src="images/protocols.png" class="skill-img" alt="">
+            <!-- <div class="skill-level">98%</div> -->
+            <h1 class="skill-name">PROTOCOLS</h1>
+            <p class="skill-info">IEEE 802.11 WLAN, ISO OSI, I2C, SPI, Wi-Fi Drivers, 5G, PyTorch, TCP/IP, UDP, ICMP, AMD CPU+GPU
+            </p>
+        </div>
+        <div class="skill-card">
+            <img src="images/tools.png" class="skill-img" alt="">
+            <!-- <div class="skill-level">98%</div> -->
+            <h1 class="skill-name">TOOLS</h1>
+            <p class="skill-info">Terminal, GCC, Git, Make, Wireshark, MATLAB, Google Gerrit, Cisco packet tracer, Visual Studio, Verilog Language, Jenkins</p>
+        </div>
     </div>
 </div>
 
 
 <!-- timeline -->
-<div class="timeline">
-    <h1 class="heading">education and experience</h1>
+<div id="edusec" class="timeline">
+    <h1 class="heading">Education and Experience</h1>
     <div class="card">
         <div class="card-body">
-            <h1 class="card-title">2000-2002</h1>
-            <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+            <h1 class="card-title">Expected May 2024</h1>
+            <h3>Binghamton University, Thomas J. Watson College of Engineering, NY, USA</h3>
+            <p> - Master of Science in Computer Science | Watson Fellowship </p>
+            <br>
+            <p class="card-detail"><strong style="color: black">Relevant Coursework: </strong> Computer Networks, Design & Analysis Comp Algo, Programming Languages, Computer Security,
+                Systems Programming, Operating Systems, Cloud Computing, HPC
+                </p>
         </div>
     </div>
     <div class="card">
         <div class="card-body">
-            <h1 class="card-title">2000-2002</h1>
-            <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+            <h1 class="card-title">Aug 2014 - Jun 2018</h1>
+            <h3>Dwarkadas J. Sanghvi College of Engineering, Mumbai, India </h3>
+            <br>
+            <p>- Bachelor of Engineering in Electronics and Telecommunications </p>
+            <!-- <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p> -->
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">May 2021 - Aug 2022</h1>
+            <h3>Global Edge Software Limited (Capgemini Group), India </h3>
+            <br>
+            <p>- Wireless Local Area Network (WLAN) Device Driver Engineer (Google Development Team) </p>
+            <!-- <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p> -->
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">Dec 2018 - May 2021</h1>
+            <h3>Global Edge Software Limited (Capgemini Group), India </h3>
+            <br>
+            <p>- IoT Device Automation Engineer (Google Automation Team)</p>
+            <!-- <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p> -->
         </div>
     </div>
     //+4 more cards
@@ -133,12 +175,13 @@
 
 
 <!-- contact section -->
-<section class="contact-section">
+<section id="consec" class="contact-section active" >
+    <h1 style="color: antiquewhite;">Liked my work!? <pre>Reach out to me 📫</pre> </h1>
     <form class="contact-form">
         <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
         <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
         <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
-        <button type="submit" class="form-submit-btn">contact</button>
+        <button type="submit" class="form-submit-btn">Contact</button>
     </form>
     <!-- map -->
     <!-- <div class="map">
